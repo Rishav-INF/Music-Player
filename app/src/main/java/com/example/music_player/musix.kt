@@ -32,7 +32,7 @@ class musix : AppCompatActivity() {
     var mMediaPlayer: MediaPlayer? = null
     var count=false
 
-    // Plays the water sound
+
     fun playSound() {
 
         if (mMediaPlayer == null) {
@@ -45,13 +45,13 @@ class musix : AppCompatActivity() {
 
     }
 
-    // Pause playback
+
     fun pauseSound() {
         if (mMediaPlayer?.isPlaying == true) mMediaPlayer?.pause()
         count=false
     }
 
-    // Stops playback
+
     fun stopSound() {
         if (mMediaPlayer != null) {
             mMediaPlayer!!.stop()
